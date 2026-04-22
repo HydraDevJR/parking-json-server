@@ -1,0 +1,68 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombres": "Juan Pérez",
+      "email": "juan@parking.com",
+      "password": "123456",
+      "documento": "12345678",
+      "rol": "admin"
+    },
+    {
+      "id": 2,
+      "nombres": "Ana Gómez",
+      "email": "ana@parking.com",
+      "password": "123456",
+      "documento": "87654321",
+      "rol": "operador"
+    }
+  ],
+  "vehiculos": [
+    {
+      "id": 1,
+      "placa": "ABC123",
+      "tipo": "carro",
+      "usuarioId": 1,
+      "propietario": "Juan Pérez"
+    },
+    {
+      "id": 2,
+      "placa": "XYZ789",
+      "tipo": "moto",
+      "usuarioId": 2,
+      "propietario": "Ana Gómez"
+    }
+  ],
+  "celdas": [
+    { "id": 1, "codigo": "A1", "tipo": "carro", "ocupada": false },
+    { "id": 2, "codigo": "A2", "tipo": "carro", "ocupada": true },
+    { "id": 3, "codigo": "B1", "tipo": "moto", "ocupada": false },
+    { "id": 4, "codigo": "B2", "tipo": "moto", "ocupada": false }
+  ],
+  "tarifas": [
+    { "id": 1, "tipo": "carro", "valorHora": 5000, "fraccionMinutos": 60, "activo": true },
+    { "id": 2, "tipo": "moto", "valorHora": 3000, "fraccionMinutos": 60, "activo": true }
+  ],
+  "estadias": [
+    {
+      "id": 1,
+      "vehiculoId": 1,
+      "placa": "ABC123",
+      "celdaId": 2,
+      "horaEntrada": "2025-04-22T08:30:00.000Z",
+      "horaSalida": null,
+      "valorPagado": null,
+      "estado": "activa"
+    },
+    {
+      "id": 2,
+      "vehiculoId": 2,
+      "placa": "XYZ789",
+      "celdaId": 3,
+      "horaEntrada": "2025-04-21T18:00:00.000Z",
+      "horaSalida": "2025-04-21T20:30:00.000Z",
+      "valorPagado": 7500,
+      "estado": "finalizada"
+    }
+  ]
+}
